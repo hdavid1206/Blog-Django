@@ -11,11 +11,12 @@ My Tennis Club - List of all members
 <ul>
     {% for x in mymembers %}
     
-        <div>
+        <div class="card">
             <li>
                 <a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a>
             </li>
         </div>
+        <br>
         
     {% endfor %}
 </ul>

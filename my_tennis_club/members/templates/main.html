@@ -1,13 +1,19 @@
 {% extends "master.html" %}
+{% load static %}
 
 {% block title %}
     My Tennis Club
 {% endblock %}
 
-
 {% block content %}
-    <h1>My Tennis Club</h1>
-    <h3>Members</h3>
-    <p>Check out all our <a href="members/">members</a></p>
+    <h1 class="title-my_tennis_club">My Tennis Club</h1>
+    <section class="nuestros-miembros">
+        <h3 class="title-dashboard">Nuestros Miembros</h3>
+        <p class="parrafo-our-members">Mira todos nuestros aquí:<a>members</a></p>
+    </section>
 
+    <section class="quienes-somos">
+        <h3 class="title-dashboard">Quiénes somos</h3>
+        <p class="parrafo-our-members">Somos un club de Tennis para todos los niños, jovenes y adultos de todo el mundo.</p>
+    </section>
 {% endblock %}
